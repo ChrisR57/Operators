@@ -4,9 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Short circuit evaluation
-        int a = 12;
-        int b = 6;
+        // Assignment Operators
+
+        int x = 12;
+        x *= 34;
+        System.out.println(x);
+
+        int y = 12;
+        y = y * 34;
+        System.out.println(y);
+
+        int z = y -= 8;
+        System.out.printf("y is %s, z is %s %n", y, z);
+    }
+
+//        //Short circuit evaluation
+//        int a = 12;
+//        int b = 6;
 
 //        if (b != 0) {
 //            int c = divideTwoNumbers(a, b);
@@ -15,15 +29,15 @@ public class Main {
 //                System.out.println("We've found a 2.");
 //            }
 //        }
-        if (b != 0 && divideTwoNumbers(a, b) == 2) {
-            System.out.println("We've found a 2.");
-
-        }
-    }
-
-    private static int divideTwoNumbers(int x, int y) {
-        return x / y;
-    }
+//        if (b != 0 && divideTwoNumbers(a, b) == 2) {
+//            System.out.println("We've found a 2.");
+//
+//        }
+//    }
+//
+//    private static int divideTwoNumbers(int x, int y) {
+//        return x / y;
+//    }
 
 
 //// Relational Operators return boolean true or false
