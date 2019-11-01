@@ -3,14 +3,37 @@ package com.learningjavaprogrammingcrashcourse;
 public class Main {
 
     public static void main(String[] args) {
-// Relational Operators return boolean true or false
 
-        int second = 31;
-        int minute = 1;
+        //Short circuit evaluation
+        int a = 12;
+        int b = 6;
 
-        if  ((minute < 59) && ((second +1) > 59)) {
-            minute++;
+//        if (b != 0) {
+//            int c = divideTwoNumbers(a, b);
+//
+//            if (c == 2) {
+//                System.out.println("We've found a 2.");
+//            }
+//        }
+        if (b != 0 && divideTwoNumbers(a, b) == 2) {
+            System.out.println("We've found a 2.");
+
         }
+    }
+
+    private static int divideTwoNumbers(int x, int y) {
+        return x / y;
+    }
+
+
+//// Relational Operators return boolean true or false
+//
+//        int second = 31;
+//        int minute = 1;
+//
+//        if  ((minute < 59) && ((second +1) > 59)) {
+//            minute++;
+//        }
 
 
 //  Remainder Operator code
